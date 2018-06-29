@@ -1,6 +1,7 @@
 <?php
 namespace Core;
 use PDO;
+use App\Config;
 /**
  * Post Model
  * PHP Version 5.6
@@ -16,16 +17,13 @@ abstract class Model
         static $db = null;
         if ($db ==null)
         {
-            try{
                 $dsn = 'mysql:host=' . Config::DB_HOST . ';dbname=' . 
                        Config::DB_NAME . ';charset=utf8';
                 $db = new PDO($dsn, Config::DB_USER, Config::DB_PASSWORD);
-        }
-        catch (PDOException $e)
-        {
-            echo $e->getMessage();
-    }
+                //Throw an Exception when an error occurs
+                $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+                return $db;
 }
-return $db;
 }
 }

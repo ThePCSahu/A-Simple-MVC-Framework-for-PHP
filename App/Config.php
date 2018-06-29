@@ -26,4 +26,9 @@ class Config
      * @var string
      */
     const DB_PASSWORD = 'rut@localhost';
+    /**
+     * Show or Hide error messages on screen
+     * @var boolean
+     */
+    const SHOW_ERRORS = false;
 }
