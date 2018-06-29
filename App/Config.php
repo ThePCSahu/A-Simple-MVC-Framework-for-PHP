@@ -10,22 +10,22 @@ class Config
      * Database host
      * @var string
      */
-    const DB_HOST = 'localhost';
+    const DB_HOST = '';
     /**
      * Database name
      * @var string
      */
-    const DB_NAME = 'poonamphp';
+    const DB_NAME = '';
     /**
      * Database user
      * @var string
      */
-    const DB_USER = 'root';
+    const DB_USER = '';
     /**
      * Database Password
      * @var string
      */
-    const DB_PASSWORD = 'rut@localhost';
+    const DB_PASSWORD = '';
     /**
      * Show or Hide error messages on screen
      * @var boolean
