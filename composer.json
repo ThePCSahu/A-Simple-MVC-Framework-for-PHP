@@ -1,0 +1,21 @@
+{
+"name": "pcsahu01/blade",
+    "description": "A simple MVC Framework Completely written in PHP",
+    "keywords": ["mvc", "php", "twig", "view", "render"],
+    "license" : "None",
+    "authors": [
+        {
+            "name": "Poonam Chand Sahu",
+            "homepage": "https://pcahu01.github.io"
+        }
+],
+    "require": {
+        "twig/twig": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\":"Core/",
+            "App\\": "App/"
+        }
+    }
+}
